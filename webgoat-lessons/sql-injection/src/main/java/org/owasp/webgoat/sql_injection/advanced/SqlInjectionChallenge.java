@@ -58,7 +58,6 @@ public class SqlInjectionChallenge extends AssignmentEndpoint {
 
 
         if (attackResult == null) {
-            //null quitados
 
             try (Connection connection = dataSource.getConnection()) {
                 
@@ -80,12 +79,8 @@ public class SqlInjectionChallenge extends AssignmentEndpoint {
                             preparedStatement.execute();
                             attackResult = success(this).feedback("user.created").feedbackArgs(username_reg).build();
                         }
-                    }                 
-
-                    
-                }      
-                
-                    
+                    }                    
+                }                    
                 
             } catch (SQLException e) {
                 attackResult = failed(this).output("Something went wrong").build();
