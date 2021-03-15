@@ -1,5 +1,6 @@
 /*
  * This file is part of WebGoat, an Open Web Application Security Project utility. For details, please see http://www.owasp.org/
+ * example
  *
  * Copyright (c) 2002 - 2019 Bruce Mayhew
  *
